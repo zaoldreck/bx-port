@@ -1,24 +1,28 @@
-# README
+# Bx Port
+This project is management my portfolios for coins
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting Started
 
-Things you may want to cover:
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-* Ruby version
+### Prerequisites
 
-* System dependencies
+What things you need to install the software and how to install them
 
-* Configuration
+Ruby 2.4.2 Recommend rbenv
+```
+https://github.com/rbenv/rbenv#homebrew-on-mac-os-x
+```
 
-* Database creation
+PostgreSQL
+```
+$ brew install postgresql
+```
 
-* Database initialization
+## Running
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Explain how to run the automated tests for this system
+Run Application
+```
+$ rails s
+```
