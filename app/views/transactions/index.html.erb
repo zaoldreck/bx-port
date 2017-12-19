@@ -1,0 +1,53 @@
+<div class="box-content">
+  <h1>
+    Transactions
+    <%= link_to "New", new_transaction_path, class: "btn btn-md btn-primary" %>
+  </h1>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Symbol</th>
+        <th>Status</th>
+        <th>Price</th>
+        <th>Volumn</th>
+        <th>Cost</th>
+        <th>Commission</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @transactions.each do |transaction| %>
+        <tr>
+          <th scope="row">
+            <%= transaction.id %>
+          </th>
+          <td>
+            <%= transaction.symbol %>
+          </td>
+          <td>
+            <%= transaction.status %>
+          </td>
+          <td>
+            <%= transaction.price %>
+          </td>
+          <td>
+            <%= transaction.volumn %>
+          </td>
+          <td>
+            <%= transaction.cost %>
+          </td>
+          <td>
+            <%= transaction.commission %>
+          </td>
+          <td>
+            <%= link_to "Edit", [:edit, transaction], class: "btn btn-default" %>
+            <%= link_to "Delete", [transaction], method: :delete, class: "btn btn-danger",
+                data: { confirm: "Are you sure?" } %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

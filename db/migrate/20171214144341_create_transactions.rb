@@ -2,11 +2,13 @@ class CreateTransactions < ActiveRecord::Migration[5.1]
   def change
     create_table :transactions do |t|
       t.date :date
-      t.string :type
-      t.float :rate
-      t.float :volumn
+      t.float :commission
+      t.float :cost
+      t.float :price
       t.float :total
-      t.float :commistion
+      t.float :volumn
+      t.string :status
+      t.string :symbol
 
       t.timestamps
     end
