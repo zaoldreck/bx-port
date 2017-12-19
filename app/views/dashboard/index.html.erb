@@ -1,17 +1,15 @@
-<div class="container-fluid">
-  <div class="flex-container">
-    <% @hash_data.each do |key, value| %>
-      <div class="box">
-        <span>
-          <b><%= "#{value["secondary_currency"]}/#{value["primary_currency"]}" %></b>
-        </span>
-        <br />
+<div class="flex-container">
+  <% @hash_data.each do |key, value| %>
+    <div class="box">
+      <span>
+        <b><%= "#{value["secondary_currency"]}/#{value["primary_currency"]}" %></b>
+      </span>
+      <br />
 
-        <%= convert_thb(value, @btc_bth) %>
-        <br />
+      <%= convert_thb(value, @btc_bth) %>
+      <br />
 
-        <%= value["change"] %>%
-      </div>
-    <% end %>
-  </div>
+      <%= value["change"] %>%
+    </div>
+  <% end %>
 </div>

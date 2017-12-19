@@ -17,11 +17,13 @@ ActiveRecord::Schema.define(version: 20171214144341) do
 
   create_table "transactions", force: :cascade do |t|
     t.date "date"
-    t.string "type"
-    t.float "rate"
-    t.float "volumn"
+    t.float "commission"
+    t.float "cost"
+    t.float "price"
     t.float "total"
-    t.float "commistion"
+    t.float "volumn"
+    t.string "status"
+    t.string "symbol"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

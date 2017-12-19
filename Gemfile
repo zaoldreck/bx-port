@@ -29,6 +29,7 @@ gem 'redis', '~> 3.0'
 gem 'httparty', '~> 0.15.6'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'awesome_print', require:"ap"
+gem 'simple_form', '~> 3.5'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

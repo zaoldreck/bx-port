@@ -5,3 +5,11 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Transaction.create(
+  date: Time.zone.today,
+  symbol: "OMG",
+  status: "BUY"
+  price: 305,
+  volumn: 99.99,
+  commission: 50
+)

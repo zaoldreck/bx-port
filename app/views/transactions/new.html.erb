@@ -1,0 +1,11 @@
+<div class="box-content">
+  <%= simple_form_for(@transaction, html: { class: "form-horizontal" }) do |form| %>
+    <%= form.input :date, as: :date, html5: true %>
+    <%= form.input :status, collection: Transaction::STATUS %>
+    <%= form.input :symbol %>
+    <%= form.input :price %>
+    <%= form.input :volumn %>
+    <%= form.input :commission %>
+    <%= form.submit nil, class: "btn btn-md btn-success" %>
+  <% end %>
+</div>
