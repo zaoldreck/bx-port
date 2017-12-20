@@ -1,5 +1,21 @@
 [
   {
+    date: "23/08/2017 19:57:48",
+    symbol: "OMG",
+    status: "BUY",
+    price: 272.81,
+    volumn: 3.92330743,
+    commission: 2.68
+  },
+  {
+    date: "04/09/2017 17:35:52",
+    symbol: "OMG",
+    status: "BUY",
+    price: 320,
+    volumn: 31.47112500,
+    commission: 25.24
+  },
+  {
     date: "7/10/2017 20:51",
     symbol: "OMG",
     status: "BUY",
