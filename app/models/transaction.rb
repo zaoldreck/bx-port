@@ -8,13 +8,13 @@ class Transaction < ApplicationRecord
     all.map(&:symbol).uniq
   end
 
-  def self.portfolios
-    list_symbol.each do |symbol|
-
+  def self.portfolios(hash_symbols, btc)
+    list_symbol.map do |symbol|
+      port(symbol, hash_symbols[symbol], btc.to_f)
     end
   end
 
-  def self.port(symbol, price)
+  def self.port(symbol, price, btc)
     buy_transactions = where(symbol: symbol, status: "BUY")
     sell_transactions = where(symbol: symbol, status: "SELL")
 
@@ -30,6 +30,14 @@ class Transaction < ApplicationRecord
     profit = market_value - cost
     percent = (profit / cost) * 100
 
+    if symbol.last(3) == "BTC"
+      avg = avg * btc
+      cost = cost * btc
+      market_value = market_value * btc
+      profit = profit * btc
+      commission = commission * btc
+    end
+
     {
       avg: avg,
       commission: commission,
@@ -40,6 +48,10 @@ class Transaction < ApplicationRecord
       symbol: symbol,
       volumns: volumns
     }
+  end
+
+  def self.symbols
+    JSON.load Redis.current.get("symbols")
   end
 
 private

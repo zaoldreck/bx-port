@@ -1,7 +1,7 @@
 [
   {
     date: "23/08/2017 19:57:48",
-    symbol: "OMG",
+    symbol: "OMG/THB",
     status: "BUY",
     price: 272.81,
     volumn: 3.92330743,
@@ -9,7 +9,7 @@
   },
   {
     date: "04/09/2017 17:35:52",
-    symbol: "OMG",
+    symbol: "OMG/THB",
     status: "BUY",
     price: 320,
     volumn: 31.47112500,
@@ -17,7 +17,7 @@
   },
   {
     date: "7/10/2017 20:51",
-    symbol: "OMG",
+    symbol: "OMG/THB",
     status: "BUY",
     price: 284.61,
     volumn: 6,
@@ -25,7 +25,7 @@
   },
   {
     date: "7/10/2017 20:51",
-    symbol: "OMG",
+    symbol: "OMG/THB",
     status: "BUY",
     price: 284.61,
     volumn: 29.12506588,
@@ -33,7 +33,7 @@
   },
   {
     date: "13/11/2017 19:33",
-    symbol: "OMG",
+    symbol: "OMG/THB",
     status: "BUY",
     price: 254.8,
     volumn: 19.58127615,
@@ -41,7 +41,7 @@
   },
   {
     date: "13/11/2017 19:48",
-    symbol: "OMG",
+    symbol: "OMG/THB",
     status: "BUY",
     price: 256.99,
     volumn: 12.21464176,
@@ -49,7 +49,7 @@
   },
   {
     date: "13/11/2017 19:48",
-    symbol: "OMG",
+    symbol: "OMG/THB",
     status: "BUY",
     price: 257,
     volumn: 7.20051194,
@@ -57,7 +57,7 @@
   },
   {
     date: "13/11/2017 19:48",
-    symbol: "OMG",
+    symbol: "OMG/THB",
     status: "SELL",
     price: 298,
     volumn: 13.61929614,
@@ -65,7 +65,7 @@
   },
   {
     date: "29/11/2017 23:20",
-    symbol: "OMG",
+    symbol: "OMG/THB",
     status: "SELL",
     price: 298,
     volumn: 26.7080625,
@@ -73,7 +73,7 @@
   },
   {
     date: "29/11/2017 23:30",
-    symbol: "OMG",
+    symbol: "OMG/THB",
     status: "SELL",
     price: 298,
     volumn: 11.07773625,
@@ -81,7 +81,7 @@
   },
   {
     date: "29/11/2017 23:32",
-    symbol: "OMG",
+    symbol: "OMG/THB",
     status: "SELL",
     price: 298,
     volumn: 1.00419463,
@@ -89,7 +89,7 @@
   },
   {
     date: "29/11/2017 23:34",
-    symbol: "OMG",
+    symbol: "OMG/THB",
     status: "SELL",
     price: 298,
     volumn: 7.10663864,
@@ -97,7 +97,7 @@
   },
   {
     date: "5/12/2017 22:01",
-    symbol: "OMG",
+    symbol: "OMG/THB",
     status: "BUY",
     price: 338,
     volumn: 49.875,
@@ -105,7 +105,7 @@
   },
   {
     date: "7/12/2017 19:37",
-    symbol: "BTC",
+    symbol: "BTC/THB",
     status: "BUY",
     price: 538900,
     volumn: 0.01097746,
@@ -113,7 +113,7 @@
   },
   {
     date: "7/12/2017 23:18",
-    symbol: "BTC",
+    symbol: "BTC/THB",
     status: "BUY",
     price: 570000,
     volumn: 0.03509627,
@@ -121,7 +121,7 @@
   },
   {
     date: "13/12/2017 20:21",
-    symbol: "LTC",
+    symbol: "LTC/THB",
     status: "BUY",
     price: 10550,
     volumn: 0.9975,
@@ -129,7 +129,7 @@
   },
   {
     date: "13/12/2017 20:22",
-    symbol: "ETH",
+    symbol: "ETH/THB",
     status: "BUY",
     price: 22474,
     volumn: 0.11297305,
@@ -137,7 +137,7 @@
   },
   {
     date: "13/12/2017 20:22",
-    symbol: "ETH",
+    symbol: "ETH/THB",
     status: "BUY",
     price: 22475,
     volumn: 0.11271186,
@@ -145,7 +145,7 @@
   },
   {
     date: "13/12/2017 20:22",
-    symbol: "ETH",
+    symbol: "ETH/THB",
     status: "BUY",
     price: 22475,
     volumn: 0.00277833,
@@ -153,7 +153,7 @@
   },
   {
     date: "13/12/2017 20:22",
-    symbol: "ETH",
+    symbol: "ETH/THB",
     status: "BUY",
     price: 22475,
     volumn: 0.19508081,
@@ -161,7 +161,7 @@
   },
   {
     date: "13/12/2017 20:22",
-    symbol: "ETH",
+    symbol: "ETH/THB",
     status: "BUY",
     price: 22475,
     volumn: 0.19508081,
@@ -169,7 +169,7 @@
   },
   {
     date: "16/12/2017 23:09",
-    symbol: "ZEC",
+    symbol: "ZEC/BTC",
     status: "BUY",
     price: 0.024,
     volumn: 0.00941808,
@@ -177,7 +177,7 @@
   },
   {
     date: "16/12/2017 23:09",
-    symbol: "ZEC",
+    symbol: "ZEC/BTC",
     status: "BUY",
     price: 0.024,
     volumn: 0.02005772,
@@ -185,7 +185,7 @@
   },
   {
     date: "16/12/2017 23:11",
-    symbol: "ZEC",
+    symbol: "ZEC/BTC",
     status: "BUY",
     price: 0.024,
     volumn: 0.20056266,
@@ -193,7 +193,7 @@
   },
   {
     date: "16/12/2017 23:12",
-    symbol: "ZEC",
+    symbol: "ZEC/BTC",
     status: "BUY",
     price: 0.024,
     volumn: 0.76746154,

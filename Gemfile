@@ -23,13 +23,15 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-# Use Redis adapter to run Action Cable in production
-gem 'redis', '~> 3.0'
 
 gem 'httparty', '~> 0.15.6'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 gem 'awesome_print', require:"ap"
 gem 'simple_form', '~> 3.5'
+
+# Redis
+gem 'redis', '~>3.2'
+gem 'redis-objects', '~> 1.2', '>= 1.2.1'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

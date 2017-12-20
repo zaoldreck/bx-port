@@ -32,8 +32,7 @@
       </tr>
     </thead>
     <tbody>
-      <% transaction = @transaction %>
-      <%# @transactions.each do |transaction| %>
+      <% @transactions.each do |transaction| %>
         <tr>
           <td>
             <%= transaction[:symbol] %>
@@ -57,7 +56,30 @@
             <%= default_number(transaction[:commission]) %>
           </td>
         </tr>
-      <%# end %>
+      <% end %>
+    </tbody>
+  </table>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Total Cost</th>
+        <th>Total Market</th>
+        <th>Total Profit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <%= default_number(@total_cost) %>
+        </td>
+        <td>
+          <%= default_number(@total_market) %>
+        </td>
+        <td>
+          <%= default_number(@total_profit) %>
+        </td>
+      </tr>
     </tbody>
   </table>
 </div>
