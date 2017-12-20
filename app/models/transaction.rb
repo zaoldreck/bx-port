@@ -22,7 +22,7 @@ class Transaction < ApplicationRecord
     buy_cost = buy_transactions.sum(:cost)
     sell_volumn = sell_transactions.sum(:volumn)
     sell_cost = sell_transactions.sum(:cost)
-    commission = buy_transactions.sum(:volumn) + sell_transactions.sum(:commission)
+    commission = buy_transactions.sum(:commission) + sell_transactions.sum(:commission)
     volumns = buy_volumn - sell_volumn
     market_value = volumns * price
     avg = (buy_cost - sell_cost) / volumns
