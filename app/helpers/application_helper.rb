@@ -9,6 +9,10 @@ module ApplicationHelper
     number_to_currency(bth, precision: 2, unit: "฿")
   end
 
+  def default_number(number, unit = "฿")
+    number_to_currency(number, precision: 2, unit: unit)
+  end
+
   def nav_tab(body, path)
     content_tag :li, class: ("active" if current_page?(path)) do
       link_to path, data: { turbolinks: false } do
