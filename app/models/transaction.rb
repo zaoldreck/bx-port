@@ -25,10 +25,25 @@ class Transaction < ApplicationRecord
     commission = buy_transactions.sum(:commission) + sell_transactions.sum(:commission)
     volumns = buy_volumn - sell_volumn
     market_value = volumns * price
-    avg = (buy_cost - sell_cost) / volumns
+
+    avg = if volumns == 0
+      0
+    else
+      (buy_cost -  sell_cost) / volumns
+    end
     cost = avg * volumns
-    profit = market_value - cost
-    percent = (profit / cost) * 100
+
+    profit = if volumns == 0
+      sell_cost - buy_cost
+    else
+      market_value - cost
+    end
+
+    percent = if volumns == 0
+      0
+    else
+      (profit / cost) * 100
+    end
 
     if symbol.last(3) == "BTC"
       avg = avg * btc
