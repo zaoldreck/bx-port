@@ -1,4 +1,36 @@
 [
+  # {
+  #   date: "7/12/2017 19:37",
+  #   symbol: "BTC/THB",
+  #   status: "BUY",
+  #   price: 538900,
+  #   volumn: 0.01097746,
+  #   commission: 14.82
+  # },
+  # {
+  #   date: "07/12/2017 21:10:17",
+  #   symbol: "BTC/THB",
+  #   status: "BUY",
+  #   price: 543999.99,
+  #   volumn: 0.01690979,
+  #   commission: 23.05
+  # },
+  # {
+  #   date: "07/12/2017 21:10:21",
+  #   symbol: "BTC/THB",
+  #   status: "BUY",
+  #   price: 543999.99,
+  #   volumn: 0.01067154,
+  #   commission: 14.54
+  # },
+  # {
+  #   date: "07/12/2017 22:43:51",
+  #   symbol: "BTC/THB",
+  #   status: "BUY",
+  #   price: 569999,
+  #   volumn: 0.01763130,
+  #   commission: 25.18
+  # },
   {
     date: "23/08/2017 19:57:48",
     symbol: "OMG/THB",
@@ -103,14 +135,6 @@
     volumn: 49.875,
     commission: 42.25
   },
-  # {
-  #   date: "7/12/2017 19:37",
-  #   symbol: "BTC/THB",
-  #   status: "BUY",
-  #   price: 538900,
-  #   volumn: 0.01097746,
-  #   commission: 14.82
-  # },
   {
     date: "07/12/2017 20:01:08",
     symbol: "BTC/THB",
@@ -119,30 +143,6 @@
     volumn: 0.00928020,
     commission: 12.58
   },
-  # {
-  #   date: "07/12/2017 21:10:17",
-  #   symbol: "BTC/THB",
-  #   status: "BUY",
-  #   price: 543999.99,
-  #   volumn: 0.01690979,
-  #   commission: 23.05
-  # },
-  # {
-  #   date: "07/12/2017 21:10:21",
-  #   symbol: "BTC/THB",
-  #   status: "BUY",
-  #   price: 543999.99,
-  #   volumn: 0.01067154,
-  #   commission: 14.54
-  # },
-  # {
-  #   date: "07/12/2017 22:43:51",
-  #   symbol: "BTC/THB",
-  #   status: "BUY",
-  #   price: 569999,
-  #   volumn: 0.01763130,
-  #   commission: 25.18
-  # },
   {
     date: "7/12/2017 23:18",
     symbol: "BTC/THB",
@@ -254,6 +254,46 @@
     price: 565348.321301807,
     volumn: 0.01841908,
     commission: 0
+  },
+  {
+    date: "21/12/2017 20:54:52",
+    symbol: "LTC/THB",
+    status: "SELL",
+    price: 11280,
+    volumn: 0.99750000,
+    commission: 28.12
+  },
+  {
+    date: "21/12/2017 21:02:00",
+    symbol: "BTC/THB",
+    status: "SELL",
+    price: 587400,
+    volumn: 0.02043647,
+    commission: 30.01
+  },
+  {
+    date: "21/12/2017 21:03:10",
+    symbol: "XRP/THB",
+    status: "BUY",
+    price: 39.5,
+    volumn: 300.111409,
+    commission: 29.71
+  },
+  {
+    date: "21/12/2017 21:04:30",
+    symbol: "XRP/THB",
+    status: "BUY",
+    price: 39.3,
+    volumn: 2.280758,
+    commission: 0.22
+  },
+  {
+    date: "21/12/2017 21:03:41",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 3300,
+    volumn: 3.39265468,
+    commission: 28.05
   }
 ].each do |hash|
   Transaction.create(hash)
