@@ -33,6 +33,8 @@ gem 'simple_form', '~> 3.5'
 gem 'redis', '~>3.2'
 gem 'redis-objects', '~> 1.2', '>= 1.2.1'
 
+gem 'friendly_id', '~> 5.2', '>= 5.2.3'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
