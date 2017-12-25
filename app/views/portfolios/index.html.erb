@@ -1,0 +1,32 @@
+<div class="box-content">
+  <h1>
+    Portfolios
+    <%= link_to "New", new_portfolio_path, class: "btn btn-primary" %>
+  </h1>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @portfolios.each do |portfolio| %>
+        <tr>
+          <td>
+            <%= portfolio.id %>
+          </td>
+          <td>
+            <%= portfolio.slug %>
+          </td>
+          <td>
+            <%= link_to "View", portfolio_path(portfolio), class: "btn btn-default" %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+

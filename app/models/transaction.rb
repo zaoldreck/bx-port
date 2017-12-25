@@ -1,5 +1,7 @@
 class Transaction < ApplicationRecord
 
+  belongs_to :portfolio
+
   STATUS = %w(BUY SELL).freeze
 
   after_save :set_cost
