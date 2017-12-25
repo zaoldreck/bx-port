@@ -1,3 +1,7 @@
+portfolio = Portfolio.create(slug: "Port 1")
+portfolio_2 = Portfolio.create(slug: "Port 2")
+portfolio_3 = Portfolio.create(slug: "Port_3")
+
 # [
 #   {
 #     date: "23/08/2017 19:57:48",

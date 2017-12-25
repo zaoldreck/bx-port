@@ -1,0 +1,92 @@
+<div class="box-content">
+  <h1>
+    Portfolios
+    <%= link_to "New", new_portfolio_path, class: "btn btn-primary" %>
+  </h1>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @portfolios.each do |portfolio| %>
+        <tr>
+          <td>
+            <%= portfolio.id %>
+          </td>
+          <td>
+            <%= portfolio.slug %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Symbol</th>
+        <th>Avg</th>
+        <th>Volumn</th>
+        <th>Cost</th>
+        <th>Market</th>
+        <th>Profit/Loss</th>
+        <th>Commission</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @transactions.each do |transaction| %>
+        <tr>
+          <td>
+            <%= transaction[:symbol] %>
+          </td>
+          <td>
+            <%= transaction[:avg] %>
+          </td>
+          <td>
+            <%= transaction[:volumns] %>
+          </td>
+          <td>
+            <%= default_number(transaction[:cost]) %>
+          </td>
+          <td>
+            <%= default_number(transaction[:market_value]) %>
+          </td>
+          <td>
+            <%= "#{default_number(transaction[:profit])} (#{default_number(transaction[:percent], '')}%)" %>
+          </td>
+          <td>
+            <%= default_number(transaction[:commission]) %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Total Cost</th>
+        <th>Total Market</th>
+        <th>Total Profit</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <%= default_number(@total_cost) %>
+        </td>
+        <td>
+          <%= default_number(@total_market) %>
+        </td>
+        <td>
+          <%= default_number(@total_profit) %>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
