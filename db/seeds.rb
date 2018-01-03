@@ -298,6 +298,55 @@ portfolio_3 = Portfolio.create(slug: "Port_3")
     price: 554,
     volumn: 11.20296931,
     commission: 15.55
+  },
+  #527600
+  {
+    date: "03/01/2018 18:50:07",
+    symbol: "ZEC/BTC",
+    status: "SELL",
+    price: 0.03646166,
+    volumn: 0.64648959,
+    commission: 0.00005893
+  },
+  {
+    date: "03/01/2018 18:51:06",
+    symbol: "ZEC/BTC",
+    status: "SELL",
+    price: 0.03646166,
+    volumn: 0.32917494,
+    commission: 0.00003000
+  },
+  {
+    date: "03/01/2018 19:06:06",
+    symbol: "ZEC/BTC",
+    status: "SELL",
+    price: 0.03646166,
+    volumn: 0.02183547,
+    commission: 0.00000199
+  },
+  {
+    date: "03/01/2018 18:50:07",
+    symbol: "BTC/THB",
+    status: "BUY",
+    price: 527600,
+    volumn: 0.02357208,
+    commission: 0
+  },
+  {
+    date: "03/01/2018 18:51:06",
+    symbol: "BTC/THB",
+    status: "BUY",
+    price: 527600,
+    volumn: 0.01200226,
+    commission: 0
+  },
+  {
+    date: "03/01/2018 19:06:06",
+    symbol: "BTC/THB",
+    status: "BUY",
+    price: 527600,
+    volumn: 0.00079616,
+    commission: 0
   }
 ].each do |hash|
   Transaction.create(hash.merge({ portfolio_id: portfolio.id }))
