@@ -367,6 +367,14 @@ end
     price: 548000,
     volumn: 0.00910128,
     commission: 12.50
+  },
+  {
+    date: "29/12/2017 04:35:34",
+    symbol: "ETH/THB",
+    status: "BUY",
+    price: 26000,
+    volumn: 1.00133654,
+    commission: 65.25
   }
 ].each do |hash|
   Transaction.create(hash.merge({ portfolio_id: portfolio_2.id }))
