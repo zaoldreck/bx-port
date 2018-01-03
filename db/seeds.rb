@@ -347,6 +347,46 @@ portfolio_3 = Portfolio.create(slug: "Port_3")
     price: 527600,
     volumn: 0.00079616,
     commission: 0
+  },
+  {
+    date: "03/01/2018 19:21:19",
+    symbol: "BTC/THB",
+    status: "SELL",
+    price: 528899,
+    volumn: 0.03637050,
+    commission: 48.09
+  },
+  {
+    date: "03/01/2018 19:23:27",
+    symbol: "XRP/THB",
+    status: "BUY",
+    price: 87.4,
+    volumn: 15.908650,
+    commission: 3.48
+  },
+  {
+    date: "03/01/2018 19:23:49",
+    symbol: "XRP/THB",
+    status: "BUY",
+    price: 87.41,
+    volumn: 5,
+    commission: 1.09
+  },
+  {
+    date: "03/01/2018 19:24:16",
+    symbol: "XRP/THB",
+    status: "BUY",
+    price: 87.41,
+    volumn: 93.208728,
+    commission: 20.41
+  },
+  {
+    date: "03/01/2018 19:31:37",
+    symbol: "XRP/THB",
+    status: "BUY",
+    price: 87,
+    volumn: 105.474159,
+    commission: 22.99
   }
 ].each do |hash|
   Transaction.create(hash.merge({ portfolio_id: portfolio.id }))
