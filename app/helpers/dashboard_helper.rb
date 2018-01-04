@@ -1,6 +1,6 @@
 module DashboardHelper
   def cache_data
-    # $cache.fetch("data", expires_in: 10) do
+    $cache.fetch("data", expires_in: 10) do
       response = HTTParty.get("https://bx.in.th/api/")
       hash = JSON.parse(response.body)
       hash_symbol = {}
@@ -11,6 +11,6 @@ module DashboardHelper
       end
       Redis.current.set("symbols", hash_symbol.to_json)
       hash
-    # end
+    end
   end
 end
