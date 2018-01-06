@@ -509,8 +509,87 @@ end
     price: 97.22,
     volumn: 552.781250,
     commission: 134.35
+  },
+  {
+    date: "05/01/2018 12:17:51",
+    symbol: "XRP/THB",
+    status: "SELL",
+    price: 97,
+    volumn: 1.385417,
+    commission: 0.33
+  },
+  {
+    date: "05/01/2018 12:32:47",
+    symbol: "BTC/THB",
+    status: "BUY",
+    price: 539449,
+    volumn: 0.01849109,
+    commission: 25.00
+  },
+  {
+    date: "05/01/2018 12:32:47",
+    symbol: "BTC/THB",
+    status: "SELL",
+    price: 539449,
+    volumn: 0.01849109,
+    commission: 0
+  },
+  {
+    date: "05/01/2018 12:32:47",
+    symbol: "PND/BTC",
+    status: "BUY",
+    price: 0.0000001,
+    volumn: 184448.62275000,
+    commission: 0.00004622
+  },
+  {
+    date: "2018-01-06 10:01:56",
+    symbol: "PND/BTC",
+    status: "SELL",
+    price: 0.00000012,
+    volumn: 67779.21062500,
+    commission: 0.00002033
+  },
+  {
+    date: "2018-01-06 10:03:13",
+    symbol: "PND/BTC",
+    status: "SELL",
+    price: 0.00000012,
+    volumn: 37633.59687500,
+    commission: 0.00001129
+  },
+  {
+    date: "2018-01-06 10:03:15",
+    symbol: "PND/BTC",
+    status: "SELL",
+    price: 0.00000012,
+    volumn: 2770.83333333,
+    commission: 0.00000083
+  },
+  {
+    date: "2018-01-06 10:03:15",
+    symbol: "PND/BTC",
+    status: "SELL",
+    price: 0.00000012,
+    volumn: 14053.86062500,
+    commission: 0.00000421
+  },
+  {
+    date: "2018-01-06 10:03:33",
+    symbol: "PND/BTC",
+    status: "SELL",
+    price: 0.00000012,
+    volumn: 62211.12129167,
+    commission: 0.00001866
+  },
+  {
+    date: "2018-01-06 10:03:33",
+    symbol: "BTC/THB",
+    status: "BUY",
+    price: 588995,
+    volumn: 0.02213383,
+    commission: 0
   }
-
 ].each do |hash|
   Transaction.create(hash.merge({ portfolio_id: portfolio_3.id }))
 end
