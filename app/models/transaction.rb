@@ -31,7 +31,7 @@ class Transaction < ApplicationRecord
     avg = if volumns == 0
       0
     else
-      (buy_cost -  sell_cost) / volumns
+      (buy_cost - sell_cost) / volumns
     end
     cost = avg * volumns
 
