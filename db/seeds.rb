@@ -629,6 +629,22 @@ end
     price: 90,
     volumn: 221.666667,
     commission: 50.00
+  },
+  {
+    date: "2018-01-08 12:45:11",
+    symbol: "BCH/THB",
+    status: "SELL",
+    price: 90000,
+    volumn: 0.03720364,
+    commission: 8.37
+  },
+  {
+    date: "2018-01-08 12:45:11",
+    symbol: "BCH/THB",
+    status: "SELL",
+    price: 90000,
+    volumn: 0.18950091,
+    commission: 42.63
   }
 ].each do |hash|
   Transaction.create(hash.merge({ portfolio_id: portfolio_3.id }))
