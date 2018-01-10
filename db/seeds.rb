@@ -1,6 +1,7 @@
-portfolio = Portfolio.create(slug: "Port 1")
-portfolio_2 = Portfolio.create(slug: "Port 2")
-portfolio_3 = Portfolio.create(slug: "Port_3")
+portfolio = Portfolio.create(slug: "Main")
+portfolio_2 = Portfolio.create(slug: "Moeii")
+portfolio_3 = Portfolio.create(slug: "Best")
+portfolio_4 = Portfolio.create(slug: "Koi")
 
 [
   {
@@ -411,11 +412,20 @@ portfolio_3 = Portfolio.create(slug: "Port_3")
     price: 670,
     volumn: 4.02465790,
     commission: 6.75
+  },
+  {
+    date: "2018-01-10 14:37:58",
+    symbol: "ETH/THB",
+    status: "BUY",
+    price: 50500,
+    volumn: 0.79038621,
+    commission: 100.03
   }
 ].each do |hash|
   Transaction.create(hash.merge({ portfolio_id: portfolio.id }))
 end
 
+# Port 2
 [
   {
     date: "7/12/2017 19:37",
@@ -496,11 +506,20 @@ end
     price: 110,
     volumn: 94.771568,
     commission: 26.12
+  },
+  {
+    date: "2018-01-10 16:09:28",
+    symbol: "OMG/THB",
+    status: "BUY",
+    price: 880,
+    volumn: 30.60511364,
+    commission: 67.50
   }
 ].each do |hash|
   Transaction.create(hash.merge({ portfolio_id: portfolio_2.id }))
 end
 
+# Port 3
 [
   {
     date: "25/12/2017 10:37:15",
@@ -645,7 +664,101 @@ end
     price: 90000,
     volumn: 0.18950091,
     commission: 42.63
+  },
+  {
+    date: "2018-01-09 21:15:55",
+    symbol: "BTC/THB",
+    status: "SELL",
+    price: 588995,
+    volumn: 0.02213383,
+    commission: 0
+  },
+  {
+    date: "2018-01-10 16:04:51",
+    symbol: "XRP/THB",
+    status: "SELL",
+    price: 76,
+    volumn: 221.666667,
+    commission: 42.11
+  },
+  {
+    date: "2018-01-10 16:04:51",
+    symbol: "ETH/THB",
+    status: "BUY",
+    price: 50000,
+    volumn: 0.39900000,
+    commission: 50
   }
 ].each do |hash|
   Transaction.create(hash.merge({ portfolio_id: portfolio_3.id }))
+end
+
+# Port 4
+[
+  {
+    date: "2018-01-10 22:44:15",
+    symbol: "OMG/THB",
+    status: "BUY",
+    price: 878,
+    volumn: 6.30194025,
+    commission: 13.86
+  },
+  {
+    date: "2018-01-10 22:44:51",
+    symbol: "OMG/THB",
+    status: "BUY",
+    price: 878,
+    volumn: 5.35672901,
+    commission: 11.78
+  },
+  {
+    date: "2018-01-10 22:45:07",
+    symbol: "OMG/THB",
+    status: "BUY",
+    price: 878,
+    volumn: 13.05714881,
+    commission: 28.73
+  },
+  {
+    date: "2018-01-10 22:45:24",
+    symbol: "OMG/THB",
+    status: "BUY",
+    price: 878,
+    volumn: 0.23181050,
+    commission: 0.51
+  },
+  {
+    date: "2018-01-10 22:45:55",
+    symbol: "OMG/THB",
+    status: "BUY",
+    price: 878,
+    volumn: 13.91475617,
+    commission: 30.61
+  },
+  {
+    date: "2018-01-10 22:46:07",
+    symbol: "OMG/THB",
+    status: "BUY",
+    price: 878,
+    volumn: 15.62812047,
+    commission: 34.38
+  },
+  {
+    date: "2018-01-10 22:56:41",
+    symbol: "ETH/THB",
+    status: "BUY",
+    price:  51500,
+    volumn: 0.84338229,
+    commission: 108.85
+  },
+  {
+    date: "2018-01-10 22:56:48",
+    symbol: "ETH/THB",
+    status: "BUY",
+    price:  51500,
+    volumn: 0.16380218,
+    commission: 21.14
+  }
+].each do |hash|
+  Transaction.create(hash.merge({ portfolio_id: portfolio_4.id }))
 end
