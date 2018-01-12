@@ -61,6 +61,7 @@ class Transaction < ApplicationRecord
       cost: cost,
       market_value: market_value,
       percent: percent,
+      price: price,
       profit: profit,
       symbol: symbol,
       volumns: volumns

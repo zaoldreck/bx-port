@@ -514,6 +514,22 @@ end
     price: 880,
     volumn: 30.60511364,
     commission: 67.50
+  },
+  {
+    date: "2018-01-12 22:32:03",
+    symbol: "OMG/THB",
+    status: "BUY",
+    price: 850,
+    volumn: 11.69425579,
+    commission: 24.91
+  },
+  {
+    date: "2018-01-12 22:45:44",
+    symbol: "ETH/THB",
+    status: "BUY",
+    price: 47000,
+    volumn: 0.21223404,
+    commission: 24.99
   }
 ].each do |hash|
   Transaction.create(hash.merge({ portfolio_id: portfolio_2.id }))
