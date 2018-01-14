@@ -530,6 +530,38 @@ end
     price: 47000,
     volumn: 0.21223404,
     commission: 24.99
+  },
+  {
+    date: "2018-01-14 10:59:05",
+    symbol: "ETH/THB",
+    status: "BUY",
+    price: 49550,
+    volumn: 0.60387523,
+    commission: 74.99
+  },
+  {
+    date: "2018-01-14 11:55:27",
+    symbol: "OMG/THB",
+    status: "BUY",
+    price: 890,
+    volumn: 15.58783266,
+    commission: 34.76
+  },
+  {
+    date: "2018-01-14 11:55:39",
+    symbol: "OMG/THB",
+    status: "BUY",
+    price: 890,
+    volumn: 0.88214105,
+    commission: 1.96
+  },
+  {
+    date: "2018-01-14 12:11:02",
+    symbol: "OMG/THB",
+    status: "BUY",
+    price: 890,
+    volumn: 61.98508247,
+    commission: 138.26
   }
 ].each do |hash|
   Transaction.create(hash.merge({ portfolio_id: portfolio_2.id }))
@@ -704,6 +736,14 @@ end
     price: 50000,
     volumn: 0.39900000,
     commission: 50
+  },
+  {
+    date: "2018-01-14 18:42:15",
+    symbol: "ETH/THB",
+    status: "BUY",
+    price: 49000,
+    volumn: 0.34208245,
+    commission: 42.01
   }
 ].each do |hash|
   Transaction.create(hash.merge({ portfolio_id: portfolio_3.id }))
