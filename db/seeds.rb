@@ -425,10 +425,10 @@ portfolio_4 = Portfolio.create(slug: "Koi")
   {
     date: "2018-01-15 22:02:25",
     symbol: "ETH/THB",
-    status: "SELL",
-    price: 1,
+    status: "WITHDRAW",
+    price: 40823.92933816478,
     volumn: 1.0525,
-    commission: 0
+    commission: 102.059823
   }
 ].each do |hash|
   Transaction.create(hash.merge({ portfolio_id: portfolio.id }))
@@ -575,10 +575,10 @@ end
   {
     date: "2018-01-15 22:02:25",
     symbol: "ETH/THB",
-    status: "SELL",
-    price: 1,
+    status: "WITHDRAW",
+    price: 36368.07062021838,
     volumn: 1.0525,
-    commission: 0
+    commission: 90.92017
   }
 ].each do |hash|
   Transaction.create(hash.merge({ portfolio_id: portfolio_2.id }))

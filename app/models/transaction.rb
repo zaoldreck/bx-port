@@ -19,19 +19,22 @@ class Transaction < ApplicationRecord
   def self.port(symbol, price, btc)
     buy_transactions = where(symbol: symbol, status: "BUY")
     sell_transactions = where(symbol: symbol, status: "SELL")
+    withdraw_transactions = where(symbol: symbol, status: "WITHDRAW")
 
     buy_volumn = buy_transactions.sum(:volumn)
     buy_cost = buy_transactions.sum(:cost)
     sell_volumn = sell_transactions.sum(:volumn)
     sell_cost = sell_transactions.sum(:cost)
+    withdraw_volumn = withdraw_transactions.sum(:volumn)
+    withdraw_cost = withdraw_transactions.sum(:cost)
     commission = buy_transactions.sum(:commission) + sell_transactions.sum(:commission)
-    volumns = buy_volumn - sell_volumn
+    volumns = buy_volumn - sell_volumn - withdraw_volumn
     market_value = volumns * price
 
     avg = if volumns == 0
       0
     else
-      (buy_cost - sell_cost) / volumns
+      (buy_cost - sell_cost - withdraw_cost) / volumns
     end
     cost = avg * volumns
 
