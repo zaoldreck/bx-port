@@ -437,6 +437,14 @@ portfolio_4 = Portfolio.create(slug: "Koi")
     price: 0,
     volumn: 0.08001985,
     commission: 0
+  },
+  {
+    date: "2018-01-26 08:34:23",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 0,
+    volumn: 0.02625773,
+    commission: 0
   }
 ].each do |hash|
   Transaction.create(hash.merge({ portfolio_id: portfolio.id }))
