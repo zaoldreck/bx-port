@@ -935,30 +935,6 @@ end
     price:  600,
     volumn: 8.31250000,
     commission: 12.49
-  },
-  {
-    date: "2018-02-02 16:20:08",
-    symbol: "XRP/THB",
-    status: "BUY",
-    price:  24,
-    volumn: 207.812500,
-    commission: 12.50
-  },
-  {
-    date: "2018-02-03 10:31:51",
-    symbol: "OMG/THB",
-    status: "BUY",
-    price:  390,
-    volumn: 25.57692308,
-    commission: 25.00
-  },
-  {
-    date: "2018-02-08 05:56:13",
-    symbol: "OMG/THB",
-    status: "BUY",
-    price:  370,
-    volumn: 13.76283101,
-    commission: 12.76
   }
 ].each do |hash|
   Transaction.create(hash.merge({ portfolio_id: portfolio_4.id }))
