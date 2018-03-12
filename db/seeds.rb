@@ -1,4 +1,4 @@
-portfolio = Portfolio.create(slug: "Main")
+portfolio = Portfolio.create(slug: "Air")
 portfolio_2 = Portfolio.create(slug: "Moeii")
 portfolio_3 = Portfolio.create(slug: "Best")
 portfolio_4 = Portfolio.create(slug: "Koi")
@@ -516,6 +516,14 @@ portfolio_4 = Portfolio.create(slug: "Koi")
     status: "BUY",
     price: 0,
     volumn: 0.07150074,
+    commission: 0
+  },
+  {
+    date: "2018-03-10 13:50:32",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 0,
+    volumn: 0.08216000,
     commission: 0
   }
 ].each do |hash|
