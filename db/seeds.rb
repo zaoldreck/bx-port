@@ -669,6 +669,38 @@ portfolio_4 = Portfolio.create(slug: "Koi")
     price: 13200,
     volumn: 0.01850900,
     commission: 0.61
+  },
+  {
+    date: "2018-04-24 09:05:27",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 0,
+    volumn: 0.08685341,
+    commission: 0
+  },
+  {
+    date: "2018-04-25 12:35:14",
+    symbol: "ETH/THB",
+    status: "SELL",
+    price: 20700,
+    volumn: 0.10722065,
+    commission: 5.54
+  },
+  {
+    date: "2018-04-25 13:00:26",
+    symbol: "ETH/THB",
+    status: "SELL",
+    price: 20700,
+    volumn: 0.13432524,
+    commission: 6.95
+  },
+  {
+    date: "2018-04-24 09:05:27",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 0,
+    volumn: 0.05115102,
+    commission: 0
   }
 ].each do |hash|
   Transaction.create(hash.merge({ portfolio_id: portfolio.id }))
