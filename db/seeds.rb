@@ -799,6 +799,38 @@ portfolio_6 = Portfolio.create(slug: "Moey")
     price: 0,
     volumn: 0.05626527,
     commission: 0
+  },
+  {
+    date: "2018-09-02 23:40:17",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 0,
+    volumn: 0.04286368,
+    commission: 0
+  },
+  {
+    date: "2018-09-05 20:22:53",
+    symbol: "OMG/THB",
+    status: "BUY",
+    price: 138,
+    volumn: 157.56517959,
+    commission: 54.49
+  },
+  {
+    date: "2018-09-05 22:26:26",
+    symbol: "OMG/THB",
+    status: "BUY",
+    price: 138,
+    volumn: 117.10873345,
+    commission: 40.50
+  },
+  {
+    date: "2018-09-06 16:36:10",
+    symbol: "ETH/THB",
+    status: "BUY",
+    price: 7549,
+    volumn: 0.26427738,
+    commission: 5.00
   }
 ].each do |hash|
   Transaction.create(hash.merge({ portfolio_id: portfolio.id }))
