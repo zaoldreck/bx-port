@@ -831,6 +831,190 @@ portfolio_6 = Portfolio.create(slug: "Moey")
     price: 7549,
     volumn: 0.26427738,
     commission: 5.00
+  },
+  {
+    date: "2018-10-20 00:17:25",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 0,
+    volumn: 0.10181137,
+    commission: 0
+  },
+  {
+    date: "2018-10-29 07:14:38",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 0,
+    volumn: 0.03252135,
+    commission: 0
+  },
+  {
+    date: "2018-11-14 09:12:45",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 0,
+    volumn: 0.07473461,
+    commission: 0
+  },
+  {
+    date: "2018-11-16 01:09:36",
+    symbol: "BSV/THB",
+    status: "BUY",
+    price: 1_800,
+    volumn: 0.09279070,
+    commission: 0
+  },
+  {
+    date: "2018-11-29 07:44:59",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 0,
+    volumn: 0.03260572,
+    commission: 0
+  },
+  {
+    date: "2018-12-14 07:46:46",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 0,
+    volumn: 0.07898781,
+    commission: 0
+  },
+  {
+    date: "2018-12-31 00:08:00",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 0,
+    volumn: 0.05593018,
+    commission: 0
+  },
+  {
+    date: "2019-01-22 05:23:00",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 0,
+    volumn: 0.03278533,
+    commission: 0
+  },
+  {
+    date: "2019-01-22 21:03:47",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 0,
+    volumn: 0.05490663,
+    commission: 0
+  },
+  {
+    date: "2019-02-05 14:42:44",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 0,
+    volumn: 0.04181767,
+    commission: 0
+  },
+  {
+    date: "2019-02-16 15:40:48",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 0,
+    volumn: 0.03660728,
+    commission: 0
+  },
+  {
+    date: "2019-03-10 15:40:43",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 0,
+    volumn: 0.06522214,
+    commission: 0
+  },
+  {
+    date: "2019-03-31 04:38:41",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 0,
+    volumn: 0.07280942,
+    commission: 0
+  },
+  {
+    date: "2019-04-14 15:04:46",
+    symbol: "XZC/THB",
+    status: "BUY",
+    price: 0,
+    volumn: 0.04700934,
+    commission: 0
+  },
+  {
+    date: "2019-04-22 21:42:29",
+    symbol: "BTC/THB",
+    status: "BUY",
+    price: 172_000,
+    volumn: 0.00120659,
+    commission: 0.52
+  },
+  {
+    date: "2019-04-22 21:42:29",
+    symbol: "BTC/THB",
+    status: "BUY",
+    price: 172_000,
+    volumn: 0.15599098,
+    commission: 67.24
+  },
+  {
+    date: "2019-04-22 21:42:29",
+    symbol: "BTC/THB",
+    status: "BUY",
+    price: 172_000,
+    volumn: 0.30457906,
+    commission: 131.29
+  },
+  {
+    date: "2019-04-22 21:42:29",
+    symbol: "BTC/THB",
+    status: "BUY",
+    price: 172_000,
+    volumn: 0.04191096,
+    commission: 18.06
+  },
+  {
+    date: "2019-04-22 21:42:29",
+    symbol: "BTC/THB",
+    status: "BUY",
+    price: 172_000,
+    volumn: 0.01180686,
+    commission: 5.08
+  },
+  {
+    date: "2019-04-22 21:42:29",
+    symbol: "BTC/THB",
+    status: "BUY",
+    price: 172_000,
+    volumn: 0.00437900,
+    commission: 1.88
+  },
+  {
+    date: "2019-04-22 21:42:29",
+    symbol: "BTC/THB",
+    status: "BUY",
+    price: 172_000,
+    volumn: 0.00600904,
+    commission: 2.59
+  },
+  {
+    date: "2019-04-22 21:42:29",
+    symbol: "BTC/THB",
+    status: "BUY",
+    price: 172_000,
+    volumn: 0.00583026,
+    commission: 2.51
+  },
+  {
+    date: "2019-04-22 21:42:29",
+    symbol: "BTC/THB",
+    status: "BUY",
+    price: 172_000,
+    volumn: 0.04822917,
+    commission: 20.79
   }
 ].each do |hash|
   Transaction.create(hash.merge({ portfolio_id: portfolio.id }))
